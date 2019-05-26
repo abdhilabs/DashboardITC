@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/logo_amikom" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Data Profile"
+        android:textColor="@color/donker"
+        android:textSize="40sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:text="Nama Lengkap"
+                android:textColor="@color/donker"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/eNama"
+                android:layout_width="312dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bg_etxt"
+                android:inputType="text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:text="Nama Pengguna"
+                android:textColor="@color/donker"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/eUser"
+                android:layout_width="312dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bg_etxt"
+                android:inputType="text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:text="Email"
+                android:textColor="@color/donker"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/eEmail"
+                android:layout_width="312dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bg_etxt"
+                android:inputType="textEmailAddress" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:text="Asal"
+                android:textColor="@color/donker"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/eAsal"
+                android:layout_width="312dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bg_etxt"
+                android:inputType="text" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <Button
+            android:onClick="Simpan"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/donker"
+            android:fontFamily="@font/montserrat"
+            android:text="SIMPAN"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>
