@@ -1,179 +1,178 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     tools:context=".DashboardActivity">
 
-    <View
-        android:id="@+id/view1"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:background="@color/donker" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@id/view1"
-        android:layout_marginTop="24dp"
-        android:gravity="center"
-        android:orientation="horizontal">
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="30dp"
-            android:src="@drawable/logo_itc" />
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/logo_amikom2" />
-    </LinearLayout>
-
     <RelativeLayout
-        android:id="@+id/rlView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="140dp">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
         <View
-            android:id="@+id/view2"
-            android:layout_width="300dp"
-            android:layout_height="150dp"
-            android:background="@drawable/bg_view" />
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/donker" />
 
-        <TextView
-            android:id="@+id/tvWelcome"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/view1"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:src="@drawable/logo_itc" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo_amikom2" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="38dp"
-            android:fontFamily="@font/montserrat"
-            android:text="Selamat Datang"
+            android:layout_marginTop="140dp">
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="300dp"
+                android:layout_height="150dp"
+                android:background="@drawable/bg_view" />
+
+            <TextView
+                android:id="@+id/tvWelcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="38dp"
+                android:fontFamily="@font/montserrat"
+                android:text="Selamat Datang"
+                android:textColor="@color/donker"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/getUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvWelcome"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/montserrat_bold"
+                android:textColor="@color/donker"
+                android:textSize="24sp"
+                tools:text="ABDHI" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvJudul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rlView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Data Profile"
             android:textColor="@color/donker"
             android:textSize="30sp" />
 
-        <TextView
-            android:id="@+id/getUser"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/tvWelcome"
-            android:layout_centerHorizontal="true"
-            android:fontFamily="@font/montserrat_bold"
-            android:textColor="@color/donker"
-            android:textSize="24sp"
-            tools:text="ABDHI" />
-    </RelativeLayout>
-
-    <TextView
-        android:id="@+id/tvJudul"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/rlView"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
-        android:fontFamily="@font/montserrat_bold"
-        android:text="Data Profile"
-        android:textColor="@color/donker"
-        android:textSize="30sp" />
-
-    <LinearLayout
-        android:id="@+id/llData"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/tvJudul"
-        android:layout_marginHorizontal="50dp"
-        android:layout_marginTop="30dp"
-        android:orientation="vertical">
-
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:id="@+id/llData"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_below="@id/tvJudul"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="30dp"
             android:orientation="vertical">
 
-            <TextView
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/montserrat"
-                android:text="Nama"
-                android:textColor="@color/donker"
-                android:textSize="20sp" />
+                android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/getNama"
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat"
+                    android:text="Nama"
+                    android:textColor="@color/donker"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/getNama"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/montserrat"
+                    android:textColor="@color/donker"
+                    android:textSize="25sp"
+                    tools:text="M Riza Abdhi P" />
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:fontFamily="@font/montserrat"
-                android:textColor="@color/donker"
-                android:textSize="25sp"
-                tools:text="M Riza Abdhi P" />
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat"
+                    android:text="Email"
+                    android:textColor="@color/donker"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/getEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/montserrat"
+                    android:textColor="@color/donker"
+                    android:textSize="25sp"
+                    tools:text="rizaabdhi@gmail.com" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat"
+                    android:text="Asal"
+                    android:textColor="@color/donker"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/getAsal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/montserrat"
+                    android:textColor="@color/donker"
+                    android:textSize="25sp"
+                    tools:text="Magelang" />
+            </LinearLayout>
         </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/montserrat"
-                android:text="Email"
-                android:textColor="@color/donker"
-                android:textSize="20sp" />
-
-            <TextView
-                android:id="@+id/getEmail"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:fontFamily="@font/montserrat"
-                android:textColor="@color/donker"
-                android:textSize="25sp"
-                tools:text="rizaabdhi@gmail.com" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/montserrat"
-                android:text="Asal"
-                android:textColor="@color/donker"
-                android:textSize="20sp" />
-
-            <TextView
-                android:id="@+id/getAsal"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:fontFamily="@font/montserrat"
-                android:textColor="@color/donker"
-                android:textSize="25sp"
-                tools:text="Magelang" />
-        </LinearLayout>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@id/llData"
-        android:gravity="bottom"
-        android:orientation="vertical">
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:layout_below="@id/llData"
+            android:layout_marginTop="50dp"
             android:background="@color/donker"
             android:fontFamily="@font/montserrat"
             android:onClick="Kembali"
@@ -181,6 +180,5 @@
             android:textColor="@android:color/white"
             android:textSize="20sp"
             android:textStyle="bold" />
-
-    </LinearLayout>
-</RelativeLayout>
+    </RelativeLayout>
+</ScrollView>
